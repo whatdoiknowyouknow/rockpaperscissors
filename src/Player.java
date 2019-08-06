@@ -1,7 +1,7 @@
 public class Player {           // child class = humanPlayer.
 
     private int score;
-    String name;
+    protected String name;
 
 
     Player(){
@@ -9,8 +9,8 @@ public class Player {           // child class = humanPlayer.
     }
 
     public String getHand(){
-        int i = (int)(Math.random()*Game.possibleHands.length);
-        return Game.possibleHands[i];
+        int i = (int)(Math.random()*Game.possibleHands.size());
+        return Game.possibleHands.get(i);
     }
 
     public void setPlayerName(){
