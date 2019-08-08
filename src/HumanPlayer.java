@@ -6,6 +6,7 @@ public class HumanPlayer extends Player {
     HumanPlayer(){
     }
 
+    @Override
     public String getHand(){
         String requestHandMessage = getPlayerName() + ", input your hand: ";
         for (String temp : Game.possibleHands){
@@ -21,6 +22,7 @@ public class HumanPlayer extends Player {
         return this.getHand();
     }
 
+    @Override
     public void setPlayerName(){
         System.out.println("Typ your name and press enter.");
         Scanner scanner = new Scanner(System.in);
