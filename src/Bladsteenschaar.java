@@ -13,6 +13,7 @@ public class Bladsteenschaar {
         Game game = new Game();
         String hand1, hand2, winningHand;
 
+
         for (int i = 0; i < numberOfRounds; i++){
 
             hand1 = game.getPlayer1().getHand();

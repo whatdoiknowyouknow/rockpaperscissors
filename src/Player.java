@@ -1,4 +1,4 @@
-public class Player {           // child class = humanPlayer.
+public abstract class Player {
 
     private int score;
     protected String name;
@@ -8,14 +8,8 @@ public class Player {           // child class = humanPlayer.
         score = 0;
     }
 
-    public String getHand(){
-        int i = (int)(Math.random()*Game.possibleHands.size());
-        return Game.possibleHands.get(i);
-    }
-
-    public void setPlayerName(){
-        this.name = "the computer";
-    }
+    public abstract String getHand();
+    public abstract void setPlayerName();
 
     public String getPlayerName(){
         return name;

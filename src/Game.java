@@ -4,8 +4,8 @@ import java.util.Arrays;
 public class Game {
 
     public static final ArrayList<String> possibleHands = new ArrayList<String>(Arrays.asList("rock", "paper", "scissors"));
-    private Player player1 = new Player();
-    private Player player2 = new HumanPlayer();
+    private Player player1 = new HumanPlayer();
+    private Player player2 = new NonHumanPlayer();
 
 
     Game(){

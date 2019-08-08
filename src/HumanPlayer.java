@@ -25,6 +25,7 @@ public class HumanPlayer extends Player {
         System.out.println("Typ your name and press enter.");
         Scanner scanner = new Scanner(System.in);
         this.name = scanner.nextLine();
+
     }
 
 
